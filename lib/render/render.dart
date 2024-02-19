@@ -27,7 +27,7 @@ class _CustomOTPFieldState extends State<CustomOTPField> {
   @override
   Widget build(BuildContext context) {
    
-    return Get.context !=null && widget.otpFieldCount == 4 ||  widget.otpFieldCount == 6 ?    SizedBox(
+    return    widget.otpFieldCount == 4 ||  widget.otpFieldCount == 6 ?    SizedBox(
       height: Get.size.height * 0.06,
       width: widget.otpFieldCount == 4 ? Get.size.width * 0.55 : Get.size.width * 0.8,
       child: Form(
@@ -74,15 +74,15 @@ class _CustomOTPFieldState extends State<CustomOTPField> {
 
                         }
                        else if(value.isNotEmpty && index == widget.otpFieldCount - 1){
-                          FocusScope.of(Get.context!).unfocus();
+                          FocusScope.of(context).unfocus();
 
                         }
                        else if (value.isNotEmpty && index < widget.otpFieldCount - 1) {
                           // Move focus to the next field if the current field is not empty and it's not the last field
-                          FocusScope.of(Get.context!).requestFocus(focusNodes[index + 1]);
+                          FocusScope.of(context).requestFocus(focusNodes[index + 1]);
                         } else if (value.isEmpty && index > 0) {
                           // Move focus to the previous field if the current field is empty
-                          FocusScope.of(Get.context!).requestFocus(focusNodes[index - 1]);
+                          FocusScope.of(context).requestFocus(focusNodes[index - 1]);
                         }
 
                         // call callback if all controllers have values
@@ -106,7 +106,7 @@ class _CustomOTPFieldState extends State<CustomOTPField> {
               for (int i = otpFieldCount - 1; i > 0; i--) {
                 if (controller[i].text.isEmpty && controller[i - 1].text.isNotEmpty) {
                   // Move focus to the previous field if the current field is empty and the previous field is not empty
-                  FocusScope.of(Get.context!).requestFocus(focusNodes[i - 1]);
+                  FocusScope.of(context).requestFocus(focusNodes[i - 1]);
                   break;
                 }
               }
@@ -115,7 +115,7 @@ class _CustomOTPFieldState extends State<CustomOTPField> {
               for (int i = 0; i < otpFieldCount - 1; i++) {
                 if (controller[i].text.isNotEmpty && controller[i + 1].text.isEmpty) {
                   // Move focus to the next field if the current field is not empty and the next field is empty
-                  FocusScope.of(Get.context!).requestFocus(focusNodes[i + 1]);
+                  FocusScope.of(context).requestFocus(focusNodes[i + 1]);
                   break;
                 }
               }
@@ -124,7 +124,7 @@ class _CustomOTPFieldState extends State<CustomOTPField> {
               for (int i = 0; i < otpFieldCount - 1; i++) {
                 if (controller[i].text.isNotEmpty && controller[i + 1].text.isEmpty) {
                   // Move focus to the next field if the current field is not empty and the next field is empty
-                  FocusScope.of(Get.context!).requestFocus(focusNodes[i + 1]);
+                  FocusScope.of(context).requestFocus(focusNodes[i + 1]);
                   break;
                 }
               }
