@@ -1,7 +1,7 @@
 name: custom_otpfield
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: https://github.com/Abhishekpanchal07/OTPField.git
 
 environment:
   sdk: '>=3.2.5 <4.0.0'
