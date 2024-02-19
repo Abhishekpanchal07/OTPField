@@ -1,5 +1,6 @@
 
-import 'package:custom_otpfield/custom_otpfield.dart';
+
+import 'package:easy_otpfield/custom_otpfield.dart';
 import 'package:flutter/material.dart';
 
 
