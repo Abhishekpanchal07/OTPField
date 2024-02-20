@@ -5,3 +5,6 @@
  ## 0.0.2 
 
 update functionality.
+## 0.0.3
+update Readme.md and CHANGELOG.md file.
+
