@@ -1,6 +1,6 @@
 name: easy_otpfield
 description: "OTPField With New Features ."
-version: 0.0.1
+version: 0.0.1+1
 homepage: https://github.com/Abhishekpanchal07/OTPField.git
 
 environment:
