@@ -1,9 +1,9 @@
-library custom_otpfield;
+library easy_otpfield;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class CustomOTPField extends StatefulWidget {
+class EasyOTPField extends StatefulWidget {
   final BuildContext context;
   final int otpFieldCount;
  final  Function(String  otpValue) onFieldFill;
@@ -13,7 +13,7 @@ class CustomOTPField extends StatefulWidget {
  final Color? focusBorderColor;
  final double? borderRadius;
   
-   const CustomOTPField({super.key, 
+   const EasyOTPField({super.key, 
    required this.otpFieldCount,
     required this.onFieldFill, 
     this.enabledBorderColor, 
@@ -25,10 +25,10 @@ class CustomOTPField extends StatefulWidget {
   
 
   @override
-  State<CustomOTPField> createState() => _CustomOTPFieldState();
+  State<EasyOTPField> createState() => _CustomOTPFieldState();
 }
 
-class _CustomOTPFieldState extends State<CustomOTPField> {
+class _CustomOTPFieldState extends State<EasyOTPField> {
    List<TextEditingController> controllers = [];
   List<FocusNode> focusNodes = [];
   final formKey = GlobalKey<FormState>();

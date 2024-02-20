@@ -1,4 +1,4 @@
-import 'package:easy_otpfield/custom_otpfield.dart';
+import 'package:easy_otpfield/easy_otpfield.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
        
-        child: CustomOTPField(otpFieldCount: 6, onFieldFill: (otp){},useRoundBorder: true,context: context,borderRadius: 10,)
+        child: EasyOTPField(otpFieldCount: 4, onFieldFill: (otpValue){}, context: context)
       ),
       
     );
