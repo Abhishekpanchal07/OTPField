@@ -1,5 +1,5 @@
 name: easy_otpfield
-description: "A new Flutter package project."
+description: "OTPField With New Features ."
 version: 0.0.1
 homepage: https://github.com/Abhishekpanchal07/OTPField.git
 
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  get: ^4.6.6
+ 
 
 dev_dependencies:
   flutter_test:
